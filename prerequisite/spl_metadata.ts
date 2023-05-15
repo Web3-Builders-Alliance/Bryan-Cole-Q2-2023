@@ -1,5 +1,5 @@
 import { Commitment, Connection, Keypair, PublicKey, Transaction, sendAndConfirmTransaction } from "@solana/web3.js"
-import wallet from "./wba-wallet.json"
+import wallet from "../wba-wallet.json"
 import { createCreateMetadataAccountV2Instruction, createCreateMetadataAccountV3Instruction } from "@metaplex-foundation/mpl-token-metadata";
 
 // We're going to import our keypair from the wallet file

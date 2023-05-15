@@ -2,7 +2,7 @@ import { Connection, Keypair, SystemProgram, PublicKey, LAMPORTS_PER_SOL } from 
 import { Program, Wallet, AnchorProvider, Address, BN } from "@project-serum/anchor"
 import { WbaVault, IDL } from "./programs/wba_vault";
 import { TOKEN_PROGRAM_ID, getOrCreateAssociatedTokenAccount, transfer } from "@solana/spl-token";
-import wallet from "./wba-wallet.json"
+import wallet from "../wba-wallet.json"
 import { ASSOCIATED_PROGRAM_ID } from "@project-serum/anchor/dist/cjs/utils/token";
 
 // We're going to import our keypair from the wallet file

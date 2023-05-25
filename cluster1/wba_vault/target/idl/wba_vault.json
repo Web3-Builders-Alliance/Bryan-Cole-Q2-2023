@@ -4,11 +4,63 @@
   "instructions": [
     {
       "name": "initialize",
-      "accounts": [],
+      "accounts": [
+        {
+          "name": "owner",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "vaultState",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "vaultAuth",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "vault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
       "args": []
     }
   ],
+  "accounts": [
+    {
+      "name": "VaultState",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "owner",
+            "type": "publicKey"
+          },
+          {
+            "name": "authBump",
+            "type": "u8"
+          },
+          {
+            "name": "vaultBump",
+            "type": "u8"
+          },
+          {
+            "name": "score",
+            "type": "u8"
+          }
+        ]
+      }
+    }
+  ],
   "metadata": {
-    "address": "Fg6PaFpoGXkYsidMpWTK6W2BeZ7FEfcYkg476zPFsLnS"
+    "address": "2nT8HjQ7KkqNycxE6iBYDKNiXmkF7TFzCo8h9tF7st11"
   }
 }

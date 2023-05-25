@@ -4,8 +4,60 @@ export type WbaVault = {
   "instructions": [
     {
       "name": "initialize",
-      "accounts": [],
+      "accounts": [
+        {
+          "name": "owner",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "vaultState",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "vaultAuth",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "vault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
       "args": []
+    }
+  ],
+  "accounts": [
+    {
+      "name": "vaultState",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "owner",
+            "type": "publicKey"
+          },
+          {
+            "name": "authBump",
+            "type": "u8"
+          },
+          {
+            "name": "vaultBump",
+            "type": "u8"
+          },
+          {
+            "name": "score",
+            "type": "u8"
+          }
+        ]
+      }
     }
   ]
 };
@@ -16,8 +68,60 @@ export const IDL: WbaVault = {
   "instructions": [
     {
       "name": "initialize",
-      "accounts": [],
+      "accounts": [
+        {
+          "name": "owner",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "vaultState",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "vaultAuth",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "vault",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
       "args": []
+    }
+  ],
+  "accounts": [
+    {
+      "name": "vaultState",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "owner",
+            "type": "publicKey"
+          },
+          {
+            "name": "authBump",
+            "type": "u8"
+          },
+          {
+            "name": "vaultBump",
+            "type": "u8"
+          },
+          {
+            "name": "score",
+            "type": "u8"
+          }
+        ]
+      }
     }
   ]
 };

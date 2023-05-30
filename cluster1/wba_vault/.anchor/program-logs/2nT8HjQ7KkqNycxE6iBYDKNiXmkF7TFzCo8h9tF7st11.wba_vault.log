@@ -1,11 +1,11 @@
 Streaming transaction logs mentioning 2nT8HjQ7KkqNycxE6iBYDKNiXmkF7TFzCo8h9tF7st11. Confirmed commitment
-Transaction executed in slot 1881:
-  Signature: 3BrEttWDazRa4GiRSUvRLj2xtx3jutiZNGGepw3jyxgTC5p14Bz7Z1XfWGmJ9JzmneNPNKA3H49tVGVhihYYat9P
+Transaction executed in slot 35:
+  Signature: 4xCzwD6Y58RcpgzebjJW6bxBpymLxwJGTX3hYADkmq6yheB9J3rTbP6CLWuCoPu5bkancExdKFJrucfmBXzzVEKL
   Status: Ok
   Log Messages:
     Program 2nT8HjQ7KkqNycxE6iBYDKNiXmkF7TFzCo8h9tF7st11 invoke [1]
     Program log: Instruction: Initialize
     Program 11111111111111111111111111111111 invoke [2]
     Program 11111111111111111111111111111111 success
-    Program 2nT8HjQ7KkqNycxE6iBYDKNiXmkF7TFzCo8h9tF7st11 consumed 17528 of 200000 compute units
+    Program 2nT8HjQ7KkqNycxE6iBYDKNiXmkF7TFzCo8h9tF7st11 consumed 13028 of 200000 compute units
     Program 2nT8HjQ7KkqNycxE6iBYDKNiXmkF7TFzCo8h9tF7st11 success
